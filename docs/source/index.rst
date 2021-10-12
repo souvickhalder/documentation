@@ -12,5 +12,5 @@ Contents
 
 .. toctree::
 
-   Caps
+   Interest Rate Caps and Floors
    api
