@@ -1,34 +1,20 @@
 Interest Rate Caps and Floors
-=====
+=============================
 
-.. _installation:
+Overview
+--------
+Caps and floors are OTC interest rate products referring to interest rate index like LIBOR or national interest rates (e.g. USD LIBOR, Euribor etc.). Caps are a series of caplets or call options which mature periodically (quarterly, semi-annually or yearly). Similarly floors are a series of put options. Interest rate caps and floors are used for heading against rising or declining rates. 
 
-Installation
-------------
+.. note::
 
-To use Lumache, first install it using pip:
+   This project is under active development. 
 
-.. code-block:: console
+Version
+-------
+The current version for this API is 1.0.0. 
 
-   (.venv) $ pip install lumache
+Description about the API
+-------------------------
 
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+Analytical function to calculate pricing and risk metrics is implemented in C++: ``computeCapFloorMetrics(Market market, ArgType1 x1, ArgType2 x2, …)``.
 
