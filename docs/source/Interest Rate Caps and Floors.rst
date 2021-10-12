@@ -81,6 +81,6 @@ Similar to the *Python* code snippet, ``atm_vol_tenors, atm_vol_surface, yield_c
 
 The description of the parameters and the default values of the *optional* parameters are similar to as explained in the *Python* code snippet. 
 
-  .. image:: Capture.JPG
-    :width: 400
+  .. image:: myComputeCapFloorMetrics.JPG
+    :width: 1500
 
