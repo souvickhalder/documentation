@@ -65,5 +65,16 @@ An example **Python** code is shown below:
 
 ``>>> mkt = [atm_vol_tenors, atm_vol_surface, yield_curves_tenors, yield_curves]`` 
 
-``>>> res = MyAnalytics.computeCapFloorMetrics(mkt, CapFloorType, Notional, Strike, TimesToMaturity, PaymentFrequency='3M', currency='USD', CalcType='PV')``
+``>>> res = MyAnalytics.computeCapFloorMetrics(mkt, 'Cap', 1000, 0.025, 1, PaymentFrequency='1Y', currency='USD', CalcType='PV')`` 
 
+``>>> print(res)`` 
+
+Output will look similar to this: 
+
+``>>> 1.99529`` 
+
+The C++ function can also be called in **Excel** using below formula: 
+
+``=myComputeCapFloorMetrics(atm_vol_tenors, atm_vol_surface, yield_curves_tenors, yield_curves, CapFloorType, Notional, Strike, TimesToMaturity, PaymentFrequency, currency, CalcType)`` 
+
+Similar to the *Python* code snippet, ``atm_vol_tenors, atm_vol_surface, yield_curves_tenors, yield_curves, CapFloorType, Notional, Strike, TimesToMaturity`` are *mandatory* parameters and ``PaymentFrequency, currency, CalcType`` are *optional* parameters. 
