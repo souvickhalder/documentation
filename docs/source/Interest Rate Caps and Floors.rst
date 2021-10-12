@@ -57,7 +57,7 @@ An example **Python** code is shown below:
 
 ``>>> atm_vol_tenors = [30, 360, 720, 1800, 3600]`` 
 
-``>>> atm_vol_surface = [[16.5, 16.5, 16.5, 16.5, 16.5], [16.5, 16.5, 16.5, 16.5, 16.5], [16.5, 16.5, 16.5, 16.5, 16.5, 16.5, 16.5, 16.5], [16.5, 16.5, 16.5, 16.5, 16.5, 16.5, 16.5, 16.5],[16.5, 16.5, 16.5, 16.5, 16.5, 16.5, 16.5, 16.5]]`` 
+``>>> atm_vol_surface = [[16.5, 17.5, 16.25, 16.5, 16.5], [16.25, 17.5, 16.25, 16.55, 16.35], [16.5, 17.35, 16.25, 16.75, 16.5], [16.5, 17.25, 16.25, 16.55, 16.95],[16.35, 17.45, 16.25, 16.85, 16.55]]`` 
 
 ``>>> yield_curves_tenors = [30, 360, 720, 1800, 3600]`` 
 
@@ -65,5 +65,5 @@ An example **Python** code is shown below:
 
 ``>>> mkt = [atm_vol_tenors, atm_vol_surface, yield_curves_tenors, yield_curves]`` 
 
-``>>> res = MyAnalytics.computeCapFloorMetrics(mkt, x, y, z, …)``
+``>>> res = MyAnalytics.computeCapFloorMetrics(mkt, CapFloorType, Notional, Strike, TimesToMaturity, PaymentFrequency='3M', currency='USD', CalcType='PV')``
 
