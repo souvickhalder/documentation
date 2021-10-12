@@ -3,10 +3,14 @@ Welcome to DRW Analytics Documentation!
 
 This webpage is designed to maintain documentation for differnet analytics API's across DRW. 
 
+.. note::
+
+   This project is under active development. 
+
 Contents
 --------
 
 .. toctree::
 
-   Interest rate caps and floors
-   1-D interpolation
+   usage
+   api
