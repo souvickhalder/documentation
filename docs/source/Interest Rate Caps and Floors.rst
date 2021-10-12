@@ -13,15 +13,39 @@ Pricing and valuation of each caplets / floorlets are determined using Black for
 
 Version
 -------
-The current version for this API is 1.0.0. 
+The current version for this API is **1.0.0**. 
 
 Description about the API
 -------------------------
-Analytical function to calculate pricing and risk metrics is implemented in C++: ``computeCapFloorMetrics(Market market, ArgType1 x1, ArgType2 x2, …)``. 
+Analytical function to calculate pricing and risk metrics is implemented in C++. 
 
 This function takes volatility surface, yield curves, Cap / Floor type, Notional, Times to maturity, payment frequency, currency as inputs. This generates PV, Delta (DV01), Gamma as outputs. 
 
-This C++ function is wrapped and can be used in *Python* using below code snippet: 
+This C++ function is wrapped and can be used in **Python** using below code snippet: 
+
+``>>> import MyAnalytics`` 
+
+``>>> res = MyAnalytics.computeCapFloorMetrics(mkt, CapFloorType, Notional, Strike, TimesToMaturity, PaymentFrequency='3M', currency='USD', CalcType='PV')`` 
+
+Below are the *mandatory* parameters for this function:
+
+CapFloorType = 'Cap' or 'Floor', 
+
+Notional = Notional amount of the trade, 
+
+Strike = Strike of Caps / Floors, 
+
+TimesToMaturity = Times to matury in number of years. E.g. 0.25 (3 month tenor), 1 (1 year tenor), 5 (5 year tenor) etc. 
+
+
+Below are the *optional* parameters for this function:
+
+PaymentFrequency = Payment frequency which can be '3M', '6M'or '1Y'. If this is not provided, '3M' will be used as default. 
+
+currency = If this is not provided, 'USD' will be used as default.
+
+An example **Python** code is shown below: 
+
 
 ``>>> import MyAnalytics`` 
 
