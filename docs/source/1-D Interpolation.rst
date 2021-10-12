@@ -1,4 +1,4 @@
-API
+1-D Interpolation
 ===
 
 .. autosummary::
