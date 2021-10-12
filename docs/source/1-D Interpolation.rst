@@ -17,8 +17,8 @@ Description about the API
 -------------------------
 Analytical function for 1-D Interpolation is implemented in C++. 
 
-This function takes abscissae (X) and ordinate (Y) and known x value(s) and interpolation type as inputs. If x is a scalar, the function returns . 
+This function takes abscissae (``X``) and ordinate (``Y``) and known ``x`` value(s) and interpolation type as inputs. If ``x`` is a scalar, the function returns a scalar output. If ``x`` is a vector, the output will be a vector of same size as ``x``. 
 
 .. note::
 
-   Few *Assumptions* should be considered while using this API: X and Y . 
+   Few *Assumptions* should be considered while using this API: ``X`` and ``Y`` must be of the same length. Currently this is used for linear, quadratic and cubic interolation methods. This will be extended for other interpolation methods. 
