@@ -29,23 +29,26 @@ This C++ function is wrapped and can be used in **Python** using below code snip
 
 Below are the *mandatory* parameters for this function:
 
-CapFloorType = 'Cap' or 'Floor', 
+``mkt = [atm_vol_tenors, atm_vol_surface, yield_curves_tenors, yield_curves]`` this is a list of ``atm_vol_tenors`` (list with volatility surface tenors in number of days), ``atm_vol_surface`` (list of lists with volatility surfaces and the number of elements are of same size as ``atm_vol_tenors``), ``yield_curves_tenors`` (list with yield curve  tenors in number of days), ``yield_curves`` (list of lists with yield curves and the number of elements are of same size as ``yield_curves_tenors``). These parameters should be intuitive from the example below. 
 
-Notional = Notional amount of the trade, 
+``CapFloorType = 'Cap' or 'Floor'``, 
 
-Strike = Strike of Caps / Floors, 
+``Notional = Notional amount of the trade``, 
 
-TimesToMaturity = Times to matury in number of years. E.g. 0.25 (3 month tenor), 1 (1 year tenor), 5 (5 year tenor) etc. 
+``Strike = Strike of Caps / Floors``, 
+
+``TimesToMaturity = Times to matury in number of years``. E.g. 0.25 (3 month tenor), 1 (1 year tenor), 5 (5 year tenor) etc. 
 
 
 Below are the *optional* parameters for this function:
 
-PaymentFrequency = Payment frequency which can be '3M', '6M'or '1Y'. If this is not provided, '3M' will be used as default. 
+``PaymentFrequency = Payment frequency`` which can be '3M', '6M'or '1Y'. If this is not provided, '3M' will be used as default. 
 
-currency = If this is not provided, 'USD' will be used as default.
+``currency = Currency of the trade`` If this is not provided, 'USD' will be used as default.
+
+CalcType = 'PV' (to calculate PV / MtM), 'DV01' (to calculate Delta / DV01) or 'Gamma' (to calculate Gamma).  If this is not provided, 'PV' will be used as default.
 
 An example **Python** code is shown below: 
-
 
 ``>>> import MyAnalytics`` 
 
