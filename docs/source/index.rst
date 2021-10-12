@@ -12,5 +12,5 @@ Contents
 
 .. toctree::
 
-   usage1
+   Caps
    api
