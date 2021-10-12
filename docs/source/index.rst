@@ -1,22 +1,4 @@
-Welcome to Lumache's documentation!
-===================================
+Interest rate caps and floors: 
+Caps and floors are OTC interest rate products referring to interest rate index like LIBOR or national interest rates (e.g. USD LIBOR, Euribor etc.). Caps are a series of caplets or call options which mature periodically (quarterly, semi-annually or yearly). Similarly floors are a series of put options. Interest rate caps and floors are used for heading against rising or declining rates. 
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
---------
-
-.. toctree::
-
-   usage
-   api
+Analytical function to calculate pricing and risk metrics is implemented in C++: computeCapFloorMetrics(Market market, ArgType1 x1, ArgType2 x2, …). The current version is 1.0.0. 
