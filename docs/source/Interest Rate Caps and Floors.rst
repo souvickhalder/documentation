@@ -1,4 +1,4 @@
-Caps
+Interest Rate Caps and Floors
 =====
 
 .. _installation:
