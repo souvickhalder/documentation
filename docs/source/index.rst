@@ -13,4 +13,4 @@ Contents
 .. toctree::
 
    Interest Rate Caps and Floors
-   api
+   1-D Interpolation
