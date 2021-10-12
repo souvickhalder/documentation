@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Souvick'
+project = 'DRW Analytics Documentation'
 copyright = '2021, Graziella'
 author = 'Graziella'
 
