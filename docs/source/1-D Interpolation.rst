@@ -22,3 +22,15 @@ This function takes abscissae (``X``) and ordinate (``Y``) and known ``x`` value
 .. note::
 
    Few *Assumptions* should be considered while using this API: ``X`` and ``Y`` must be of the same length. Currently this is used for linear, quadratic and cubic interolation methods. This will be extended for other interpolation methods. 
+   
+This C++ function is wrapped and can be used in **Python** using below code snippet: 
+
+``>>> import MyAnalytics`` 
+
+``>>> y = MyAnalytics.compute1DInterpolation(X, Y, InterpolationType='linear', x)`` 
+
+Below are the *mandatory* parameters for this function: 
+
+``X = abscissae for the interpolation`` 
+
+``Y = ordinate for the interpolation`` This is of same the same length as ``X``. 
