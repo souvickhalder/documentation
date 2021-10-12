@@ -78,3 +78,5 @@ The C++ function can also be called in **Excel** using below formula:
 ``=myComputeCapFloorMetrics(atm_vol_tenors, atm_vol_surface, yield_curves_tenors, yield_curves, CapFloorType, Notional, Strike, TimesToMaturity, PaymentFrequency, currency, CalcType)`` 
 
 Similar to the *Python* code snippet, ``atm_vol_tenors, atm_vol_surface, yield_curves_tenors, yield_curves, CapFloorType, Notional, Strike, TimesToMaturity`` are *mandatory* parameters and ``PaymentFrequency, currency, CalcType`` are *optional* parameters. 
+
+The description of the parameters and the default values of the *optional* parameters are similar to as explained in the *Python* code snippet. 
