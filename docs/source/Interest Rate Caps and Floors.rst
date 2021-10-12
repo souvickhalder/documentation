@@ -19,7 +19,11 @@ Description about the API
 -------------------------
 Analytical function to calculate pricing and risk metrics is implemented in C++. 
 
-This function takes volatility surface, yield curves, Cap / Floor type, Notional, Times to maturity, payment frequency, currency as inputs. This generates PV, Delta (DV01), Gamma as outputs. 
+This function takes ATM volatility surface, yield curves, Cap / Floor type, Notional, Strike, Times to maturity, payment frequency, currency as inputs. This generates PV, Delta (DV01), Gamma as outputs. 
+
+.. note::
+
+   Few *Assumptions* should be considered while using this API: Strikes are same for all payments. Development works is in progress to use different ``Strikes`` for different payment dates. Yield curves are interpolated using Bootstrapping methods. This API takes ATM volatility is used for the calculation. Linear interpolation is used to adjust for different tenors. Future development will enhance the adjustment for different Strikes. 
 
 This C++ function is wrapped and can be used in **Python** using below code snippet: 
 
@@ -39,14 +43,13 @@ Below are the *mandatory* parameters for this function:
 
 ``TimesToMaturity = Times to matury in number of years``. E.g. 0.25 (3 month tenor), 1 (1 year tenor), 5 (5 year tenor) etc. 
 
-
 Below are the *optional* parameters for this function:
 
 ``PaymentFrequency = Payment frequency`` which can be '3M', '6M'or '1Y'. If this is not provided, '3M' will be used as default. 
 
 ``currency = Currency of the trade`` If this is not provided, 'USD' will be used as default.
 
-CalcType = 'PV' (to calculate PV / MtM), 'DV01' (to calculate Delta / DV01) or 'Gamma' (to calculate Gamma).  If this is not provided, 'PV' will be used as default.
+``CalcType = 'PV' (to calculate PV / MtM), 'DV01' (to calculate Delta / DV01) or 'Gamma' (to calculate Gamma)``.  If this is not provided, 'PV' will be used as default.
 
 An example **Python** code is shown below: 
 
