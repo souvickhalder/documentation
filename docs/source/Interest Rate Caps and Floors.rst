@@ -18,6 +18,6 @@ Description about the API
 Analytical function to calculate pricing and risk metrics is implemented in C++: ``computeCapFloorMetrics(Market market, ArgType1 x1, ArgType2 x2, …)``. 
 
 This C++ function is wrapped and can be used in *Python* in this way: 
-``import MyAnalytics
-res = MyAnalytics.computeCapFloorMetrics(mkt, x, y, z, …)``
+>>> import MyAnalytics
+>>> res = MyAnalytics.computeCapFloorMetrics(mkt, x, y, z, …)``
 
