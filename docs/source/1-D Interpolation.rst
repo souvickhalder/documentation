@@ -86,3 +86,8 @@ The C++ function can also be called in **Excel** using below formula:
 Similar to the *Python* code snippet, ``X``, ``Y`` and ``x`` are *mandatory* parameters and ``InterpolationType`` is *optional* parameter. 
 
 The description of the parameters and the default values of the *optional* parameter is similar to as explained in the *Python* code snippet. 
+
+Below example shows how the function can be called in *Excel*: 
+
+  .. image:: mycompute1DInterpolation.JPG
+    :width: 1500
