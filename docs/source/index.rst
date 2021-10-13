@@ -1,7 +1,7 @@
 Welcome to DRW Analytics Documentation!
 ===============================================
 
-This webpage is designed to maintain documentation for differnet analytics API's across DRW. 
+This webpage is designed to maintain documentations for different analytics API's across DRW. 
 
 .. note::
 
