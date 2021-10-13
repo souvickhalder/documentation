@@ -3,7 +3,7 @@
 
 Overview
 --------
-This function takes abscissae (X) and ordinate (Y) and known x value(s) is(are) provided as inputs. Based on the interpolation type (e.g. linear, quadratic, cubic) mentioned, it outputs the interpolated value(s). 
+This function takes abscissae (X) and ordinate (Y) and known x value(s) as inputs. Based on the interpolation type (e.g. linear, quadratic, cubic) mentioned, it outputs the interpolated value(s). 
 
 .. note::
 
@@ -21,7 +21,7 @@ This function takes abscissae (``X``) and ordinate (``Y``) and known ``x`` value
 
 .. note::
 
-   Few *Assumptions* should be considered while using this API: ``X`` and ``Y`` must be of the same length. Currently this is used for linear, quadratic and cubic interolation methods. This will be extended for other interpolation methods. 
+   Few *Assumptions* should be considered while using this API: ``X`` and ``Y`` must be of the same length. Currently this is used for linear, quadratic and cubic interpolation  methods. This will be extended for other interpolation methods. 
    
 This C++ function is wrapped and can be used in **Python** using below code snippet: 
 
