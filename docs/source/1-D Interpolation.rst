@@ -89,5 +89,5 @@ The description of the parameters and the default values of the *optional* param
 
 Below example shows how the function can be called in *Excel*: 
 
-  .. image:: mycompute1DInterpolation.JPG 
+  .. image:: mycompute1DInterpolation_v2.JPG 
     :width: 1500
