@@ -78,3 +78,11 @@ Output will look similar to this:
 Output will look similar to this: 
 
 ``>>> [9.5, 10.5]`` 
+
+The C++ function can also be called in **Excel** using below formula: 
+
+``=mycompute1DInterpolation(X, Y, InterpolationType, x)`` 
+
+Similar to the *Python* code snippet, ``X``, ``Y`` and ``x`` are *mandatory* parameters and ``InterpolationType`` is *optional* parameter. 
+
+The description of the parameters and the default values of the *optional* parameter is similar to as explained in the *Python* code snippet. 
