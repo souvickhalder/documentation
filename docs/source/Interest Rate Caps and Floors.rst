@@ -81,6 +81,8 @@ Similar to the *Python* code snippet, ``atm_vol_tenors, atm_vol_surface, yield_c
 
 The description of the parameters and the default values of the *optional* parameters are similar to as explained in the *Python* code snippet. 
 
+Below example shows how the function can be called in *Excel*: 
+
   .. image:: myComputeCapFloorMetrics.JPG
     :width: 1500
 
